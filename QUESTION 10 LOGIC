@@ -1,0 +1,33 @@
+When designing a program to manage contact information, it's important to break down the problem into manageable subproblems that can be implemented separately and incrementally. Here's how you could structure the work and implement it in C:
+
+Subproblems:
+Define the Data Structure:
+
+Create a structure to hold the contact information (first name, last name, and telephone number).
+Initialize the Contact List:
+
+Create an array of the contact structure to store up to 12 contacts.
+Initialize this array.
+Add a Contact:
+
+Write a function to add a new contact to the list if there is space.
+Delete a Contact:
+
+Write a function to delete a contact based on some identifier (e.g., index or name).
+Update a Contact:
+
+Write a function to update the information of an existing contact.
+Display All Contacts:
+
+Write a function to display the information for all current entries in the contact list.
+Menu System:
+
+Create a menu system to allow the user to choose among adding, deleting, updating, and displaying contacts.
+Order of Implementation:
+Define the Data Structure.
+Initialize the Contact List.
+Implement the Menu System.
+Implement the Add Contact Function.
+Implement the Delete Contact Function.
+Implement the Update Contact Function.
+Implement the Display All Contacts Function.
