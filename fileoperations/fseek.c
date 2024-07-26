@@ -2,7 +2,7 @@
 
 int main() {
     FILE *fp;
-    char buffer[20];  // Ensure the buffer is large enough
+    char buffer[20];  // Ensure buffer is large enough
 
     // Open the file "sample.txt" for reading and writing ("r+").
     fp = fopen("sample.txt", "r+");
@@ -22,7 +22,7 @@ int main() {
     // Read 10 characters from the current position.
     size_t elements_read = fread(buffer, sizeof(char), 10, fp);
 
-    // Check for errors or EOF.
+    // Check for errors or EOF(end of file).
     if (ferror(fp) != 0) {
         perror("Error reading file");
         fclose(fp);
@@ -35,7 +35,7 @@ int main() {
     // Print the read characters.
     printf("Read %zu characters: %s\n", elements_read, buffer);
 
-    // Close the file.
+    // Close file.
     fclose(fp);
 
     return 0;
