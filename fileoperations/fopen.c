@@ -1,6 +1,5 @@
-#include <stdio.h>  // Include the standard input/output library
-#include <string.h> // Include the string manipulation library
-
+#include <stdio.h>  
+#include <string.h> 
 int main()
 {
     FILE *fp; // Declare a file pointer
@@ -12,8 +11,8 @@ int main()
     // Write the string "this is a test file\n" to the file
     fprintf(fp, "this is a test file\n");
 
-    // Close the file to ensure all data is written and resources are freed
+    // Close the file 
     fclose(fp);
 
-    return 0; // Return 0 to indicate successful execution
+    return 0; 
 }
