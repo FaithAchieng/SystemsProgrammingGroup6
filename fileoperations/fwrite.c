@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    // Define an array of integers
+    // Define array of integers
     int data[] = {1, 2, 3, 4, 5};
     size_t dataSize = sizeof(data); // Total size of data in bytes
 
@@ -20,7 +20,7 @@ int main() {
         return 1;
     }
 
-    // Close the file
+    // Close file
     fclose(file);
 
     printf("Data written to file successfully.\n");
